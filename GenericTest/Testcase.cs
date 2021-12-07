@@ -59,7 +59,15 @@ namespace GenricTest
         public void GivenMaxstringFirst_WhenPrintMaxValue_ThenShouldGiveFirstValue()
         {
             string[] stringArray = { "APPLE", "PEACH", "BANANA" };
-            string expected = stringArray[2];
+            string expected = stringArray[0];
+            GenricMaximum<string> genric = new GenricMaximum<string>();
+            string result = genric.PrintMaxValue(stringArray);
+            Assert.AreEqual(expected, result);
+        }
+        public void GivenMaxstringSecond_WhenPrintMaxValue_ThenShouldGiveSecondValue()
+        {
+            string[] stringArray = { "PEACH", "APPLE", "BANANA" };
+            string expected = stringArray[1];
             GenricMaximum<string> genric = new GenricMaximum<string>();
             string result = genric.PrintMaxValue(stringArray);
             Assert.AreEqual(expected, result);
