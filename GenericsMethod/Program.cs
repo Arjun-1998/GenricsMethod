@@ -14,6 +14,10 @@ class program
         GenricMaximum<double> genericDouble = new GenricMaximum<double>();
         genericDouble.PrintMaxValue(doubleArray);
 
+        string[] stringArray = { "APPLE", "PEACH", "BANANA"};
+        GenricMaximum<string> genericstring = new GenricMaximum<string>();
+        genericstring.PrintMaxValue(stringArray);
+
 
 
 
