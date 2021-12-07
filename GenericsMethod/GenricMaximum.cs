@@ -14,6 +14,12 @@ namespace Genric
             var max = MaxValue(value);
             return max;
         }
+
+        internal void PrintMaxValue(object floatArray)
+        {
+            throw new NotImplementedException();
+        }
+
         public T[] Sort(T[] values)
         {
             Array.Sort(values);
