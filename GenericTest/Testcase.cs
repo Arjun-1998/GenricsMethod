@@ -40,5 +40,13 @@ namespace GenricTest
             double result = genric.PrintMaxValue(doubleArray);
             Assert.AreEqual(expected, result);
         }
+        public void GivenMaxDoubleSecond_WhenPrintMaxValue_ThenShouldGiveSecondValue()
+        {
+            double[] doubleArray = { 6.2, 8.3, 2.3 };
+            double expected = doubleArray[1];
+            GenricMaximum<double> genric = new GenricMaximum<double>();
+            double result = genric.PrintMaxValue(doubleArray);
+            Assert.AreEqual(expected, result);
+        }   
     }
 }
