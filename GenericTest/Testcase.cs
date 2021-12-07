@@ -72,5 +72,13 @@ namespace GenricTest
             string result = genric.PrintMaxValue(stringArray);
             Assert.AreEqual(expected, result);
         }
+        public void GivenMaxstringThird_WhenPrintMaxValue_ThenShouldGiveThirdValue()
+        {
+            string[] stringArray = { "BANANA", "PEACH", "APPLE" };
+            string expected = stringArray[2];
+            GenricMaximum<string> genric = new GenricMaximum<string>();
+            string result = genric.PrintMaxValue(stringArray);
+            Assert.AreEqual(expected, result);
+        }
     }
 }
